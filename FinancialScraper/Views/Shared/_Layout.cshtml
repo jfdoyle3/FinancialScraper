@@ -14,11 +14,18 @@
             <a href="#" class="brand-logo cener white-text" style="font-family:Cambrian, Arial;"<span class="flow-text"> Materialize navBar is working. - ready to build</span></a>
         </div>
     </nav>
-    
+    @Html.Partial("_LoginPartial")
     @RenderBody()
-  
 
-    
+    <footer>
+        <h5>Yahoo Scraper</h5>
+        <i style="padding: 6px">Typed by the fingers of:</i>
+        <p>&copy; @DateTime.Now.Year - Jim Doyle, Student</p>
+        <a href="http://careerdevs.com">CareerDevs University</a>
+    </footer>
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/materialize/js/materialize.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
