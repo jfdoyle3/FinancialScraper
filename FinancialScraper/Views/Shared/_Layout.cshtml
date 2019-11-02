@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="grey darken-2">
+<body>
     <nav class="teal lighten-2">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo cener white-text" style="font-family:Cambrian, Arial;"<span class="flow-text"> Materialize navBar is working. - ready to build</span></a>
+            @Html.Partial("_LoginPartial")
         </div>
     </nav>
-    @Html.Partial("_LoginPartial")
-    @RenderBody()
+   
 
+    @RenderBody()
+<div class="container">
     <footer>
-        <h5>Yahoo Scraper</h5>
+        <h5>Financial Scraper</h5>
         <i style="padding: 6px">Typed by the fingers of:</i>
         <p>&copy; @DateTime.Now.Year - Jim Doyle, Student</p>
         <a href="http://careerdevs.com">CareerDevs University</a>
     </footer>
-
-
-
+</div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/materialize/js/materialize.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
