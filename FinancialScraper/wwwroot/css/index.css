@@ -1,4 +1,4 @@
-﻿#twelve {
+﻿ #twelve{
     background-color: greenyellow;
     text-align: center;
 }
@@ -12,3 +12,11 @@
     background-color: azure;
     text-align: center;
 }
+#one {
+    background-color: orchid;
+    text-align: center;
+}
+a{
+    align-content: center;
+}
+

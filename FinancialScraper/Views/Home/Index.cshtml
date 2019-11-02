@@ -1,13 +1,31 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-    <head>
-        <link rel="stylesheet" href="~/css/index.css" />
-    </head>
-    <body>
+<head>
+    <link rel="stylesheet" href="~/css/index.css" />
+</head>
+<body>
+    <div class="row">
+        <div id="twelve" class="col s12">This div is 12-columns wide on all screen sizes</div>
+        <div id="sixA" class="col s6">6-columns (one-half)</div>
+        <div id="sixB" class="col s6">6-columns (one-half)</div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div id="twelve" class="col s12">This div is 12-columns wide on all screen sizes</div>
-            <div id="sixA" class="col s6">6-columns (one-half)</div>
-            <div id="sixB" class="col s6">6-columns (one-half)</div>
+            <div id="bLogin" class="col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                    Login
+                    <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light" type="submit" name="action">
+                    Register
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
+
+
+<input type="submit" class="btn btn-secondary" value="Scrape" onclick="location.href='@Url.Action("Scrape","StockTables")'" />
+<input type="submit" class="btn btn-secondary" value="History" onclick="location.href='@Url.Action("History","StockTables")'" />
